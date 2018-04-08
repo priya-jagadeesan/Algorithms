@@ -1,0 +1,54 @@
+var CirQueue = require('./_CirQueue')
+
+var cirQ = new CirQueue(5);
+
+// console.log("Empty circular queue : ", cirQ);
+console.log("--------------Empty Circular Queue---------------------");
+console.log("Empty circular queue - Front Value : ", cirQ.front());
+console.log("Empty circular queue - isEmpty? : ", cirQ.isEmpty());
+console.log("Empty circular queue - isFull? : ", cirQ.isFull());
+console.log("Empty circular queue - size? : ", cirQ.size());
+console.log("Empty circular queue - contains value? : ", cirQ.contains(10));
+console.log("Empty circular queue - dequeue : ", cirQ.dequeue());
+console.log("------------Cir Queue with only one value--------------");
+console.log("circular queue - enqueue : ", cirQ.enqueue(10));
+console.log("circular queue - Front Value : ", cirQ.front());
+console.log("circular queue - isEmpty? : ", cirQ.isEmpty());
+console.log("circular queue - isFull? : ", cirQ.isFull());
+console.log("circular queue - size? : ", cirQ.size());
+console.log("circular queue - contains value? : ", cirQ.contains(10));
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - Front Value : ", cirQ.front());
+console.log("------------Cir Queue with value----------------------");
+console.log("circular queue - enqueue : ", cirQ.enqueue(20));
+console.log("circular queue - enqueue : ", cirQ.enqueue(30));
+console.log("circular queue - enqueue : ", cirQ.enqueue(40));
+console.log("circular queue - enqueue : ", cirQ.enqueue(50));
+console.log("circular queue - enqueue : ", cirQ.enqueue(60));
+console.log("circular queue - Front Value : ", cirQ.front());
+console.log("circular queue - isEmpty? : ", cirQ.isEmpty());
+console.log("circular queue - isFull? : ", cirQ.isFull());
+console.log("circular queue - size? : ", cirQ.size());
+console.log("circular queue - contains value? : ", cirQ.contains(40));
+console.log("circular queue - contains value? : ", cirQ.contains(4));
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("circular queue - dequeue : ", cirQ.dequeue());
+console.log("------------Cir Queue with grow----------------------");
+console.log("circular queue - grow size : ", cirQ.grow(10));
+console.log("circular queue - enqueue : ", cirQ.enqueue(10));
+console.log("circular queue - enqueue : ", cirQ.enqueue(20));
+console.log("circular queue - enqueue : ", cirQ.enqueue(30));
+console.log("circular queue - enqueue : ", cirQ.enqueue(40));
+console.log("circular queue - enqueue : ", cirQ.enqueue(50));
+console.log("circular queue - enqueue : ", cirQ.enqueue(60));
+console.log("circular queue - enqueue : ", cirQ.enqueue(70));
+console.log("circular queue - enqueue : ", cirQ.enqueue(80));
+console.log("circular queue - enqueue : ", cirQ.enqueue(90));
+console.log("circular queue - enqueue : ", cirQ.enqueue(100));
+console.log("circular queue - isFull? : ", cirQ.isFull());
+console.log("circular queue - size? : ", cirQ.size());
+

@@ -1,0 +1,29 @@
+var SLNode = require('./_SLNode');
+var SList = require('./_SList');
+
+SList.prototype.front = function(){
+    if (this.head){
+        return this.head.val;
+    }
+    return null;
+}
+
+// create an empty list
+var list1 = new SList();
+console.log("an empty list : ",list1.SLdisplay());
+console.log("Peek front value of an empty list : ",list1.front());
+console.log("------------------------------------------------");
+
+// peek Front value of a list of values
+var node1 = new SLNode(10);
+list1.head = node1;
+var node2 = new SLNode(20);
+var node3 = new SLNode(30);
+var node4 = new SLNode(40);
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+console.log("After adding values to the list : ",list1.SLdisplay());
+console.log("Peek front value  of the list : ",list1.front());
+console.log("No change in the list after front() : ",list1.SLdisplay());
+console.log("-----------------------------------------");

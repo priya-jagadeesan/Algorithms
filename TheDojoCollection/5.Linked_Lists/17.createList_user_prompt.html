@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./17.createList_user_prompt.js"></script>
+    <title>Create List on User prompt</title>
+</head>
+
+<body>
+    <div id='display'>
+
+    </div>
+    <script>
+        // create an empty list
+        var list1 = new SList();
+
+        //prompt user for input values of the list
+        var input = document.createTextNode(list1.createList());
+        
+        //create a heading for the DOM
+        var heading1 = document.createElement("h1");
+        var text = document.createTextNode("New List created : ");
+        heading1.appendChild(text);
+        document.getElementById('display').appendChild(heading1);
+        
+        //create DOM element with the list elements
+        var list = document.createElement("h3");
+        list.appendChild(input);
+        document.getElementById('display').appendChild(list);
+    </script>
+</body>
+
+</html>

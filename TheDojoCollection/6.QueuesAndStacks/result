@@ -1,0 +1,57 @@
+--------------Empty Circular Queue---------------------
+queue is empty
+Empty circular queue - Front Value :  null
+queue is empty
+Empty circular queue - isEmpty? :  true
+Empty circular queue - isFull? :  false
+queue is empty
+Empty circular queue - size? :  0
+queue is empty
+Empty circular queue - contains value? :  false
+queue is empty
+Empty circular queue - dequeue :  false
+------------Cir Queue with only one value--------------
+circular queue - enqueue :  true
+circular queue - Front Value :  10
+circular queue - isEmpty? :  false
+circular queue - isFull? :  false
+circular queue - size? :  1
+circular queue - contains value? :  true
+circular queue - dequeue :  10
+queue is empty
+circular queue - Front Value :  null
+------------Cir Queue with value----------------------
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - Front Value :  20
+circular queue - isEmpty? :  false
+queue is full
+circular queue - isFull? :  true
+circular queue - size? :  5
+circular queue - contains value? :  true
+circular queue - contains value? :  false
+circular queue - dequeue :  20
+circular queue - dequeue :  30
+circular queue - dequeue :  40
+circular queue - dequeue :  50
+circular queue - dequeue :  60
+queue is empty
+circular queue - dequeue :  false
+------------Cir Queue with grow----------------------
+circular queue - grow size :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+circular queue - enqueue :  true
+queue is full
+circular queue - isFull? :  true
+circular queue - size? :  10
