@@ -18,7 +18,7 @@ function partition(arr, low = 0, high = arr.length-1){
             swap(arr, l, h);
         }
     }
-
+    
     swap(arr, low, h);
     return h;
 }
